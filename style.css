@@ -1,0 +1,15 @@
+/** VARIABLES **/
+/** FONTS **/
+@font-face {
+  font-family: hankengrotesk;
+  src: url("./fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype-variations");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}/*# sourceMappingURL=style.css.map */

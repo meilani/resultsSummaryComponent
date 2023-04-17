@@ -1,0 +1,22 @@
+/** VARIABLES **/
+$red: hsl(0, 100%, 67%);
+$orange: hsl(39, 100%, 37%);
+$green: hsl(166, 100%, 37%);
+$blue: hsl(234, 85%, 45%);
+
+/** FONTS **/
+
+@font-face {
+    font-family: hankengrotesk;
+    src: url('./fonts/HankenGrotesk-VariableFont_wght.ttf') format("truetype-variations");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}

@@ -53,6 +53,11 @@ ul {
   list-style-type: none;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 375px) {
+  ul {
+    margin-bottom: 1.5rem;
+  }
+}
 
 .container {
   display: flex;
@@ -148,8 +153,19 @@ ul {
     margin-bottom: 0.5rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .container > .col-2 {
+    padding: 1.5rem 1.875rem 1.875rem;
+  }
+}
 .container > .col-2 h2 {
   margin-bottom: 1.56rem;
+}
+@media screen and (max-width: 375px) {
+  .container > .col-2 h2 {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+  }
 }
 .container > .col-2 li {
   display: flex;
@@ -158,9 +174,19 @@ ul {
   margin-bottom: 0.89rem;
   width: 100%;
 }
+@media screen and (max-width: 375px) {
+  .container > .col-2 li {
+    margin-bottom: 1rem;
+  }
+}
 .container > .col-2 .category {
   border-radius: 12px;
   padding: 0.89rem;
+}
+@media screen and (max-width: 375px) {
+  .container > .col-2 .category {
+    padding: 1.094rem 1rem;
+  }
 }
 .container > .col-2 .category .col-1 {
   font-weight: 500;
@@ -214,6 +240,12 @@ ul {
   padding: 0.89rem;
   line-height: 1.21em;
   position: relative;
+}
+@media screen and (max-width: 375px) {
+  .container .btn {
+    font-size: 1.125rem;
+    padding: 1.07rem;
+  }
 }
 .container .btn::before {
   content: "Continue";

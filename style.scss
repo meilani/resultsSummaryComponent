@@ -65,6 +65,10 @@ h1 {
 ul {
     list-style-type: none;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 375px) {
+        margin-bottom: 1.5rem;
+    }
 }
 
 .container {
@@ -162,8 +166,16 @@ ul {
     }
 
     > .col-2 {
+        @media screen and (max-width: 375px) {
+            padding: 1.5rem 1.875rem 1.875rem;
+        }
         h2 {
             margin-bottom: 1.56rem;
+
+            @media screen and (max-width: 375px) {
+                font-size: 1.125rem;
+                margin-bottom: 1.5rem;
+            }
         }
         li {
             display: flex;
@@ -171,11 +183,19 @@ ul {
             align-items: center;
             margin-bottom: .89rem;
             width: 100%;
+
+            @media screen and (max-width: 375px) {
+                margin-bottom: 1rem;
+            }
         }
 
         .category {
             border-radius: 12px;
             padding: .89rem;
+
+            @media screen and (max-width: 375px) {
+                padding: 1.094rem 1rem;
+            }
 
             .col-1 {
                 font-weight: 500;
@@ -243,6 +263,11 @@ ul {
         padding: .89rem;
         line-height: 1.21em;
         position: relative;
+
+        @media screen and (max-width: 375px) {
+            font-size: 1.125rem;
+            padding: 1.07rem;
+        }
 
         &::before {
             content: "Continue";

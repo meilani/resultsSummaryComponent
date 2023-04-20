@@ -55,6 +55,11 @@ h1 {
     font-size: 1.33rem;
     line-height: 1.3em;
     margin-bottom: 1.94rem;
+
+    @media screen and (max-width: 375px) {
+        font-size: 1.125rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 ul {
@@ -90,6 +95,7 @@ ul {
 
         @media screen and (max-width: 375px) {
             border-radius: $borderRadiusMobile;
+            padding: 1.5rem;
         }
     }
 
@@ -110,6 +116,10 @@ ul {
             flex-direction: row;
             margin: 0 auto 1.56rem;
     
+            @media screen and (max-width: 375px) {
+                width: 140px;
+                margin: 0 auto 1.5rem;
+            }
         }
     
         .score-lg {
@@ -122,6 +132,10 @@ ul {
                 font-size: 4rem;
                 line-height: 1em;
                 font-weight: 800;
+
+                @media screen and (max-width: 375px) {
+                    font-size: 3.5rem;
+                }
             }
         }
     
@@ -139,6 +153,11 @@ ul {
             font-weight: 700;
             line-height: 1.3em;
             margin-bottom: .78rem;
+
+            @media screen and (max-width: 375px) {
+                font-size: 1.5rem;
+                margin-bottom: .5rem;
+            }
         }
     }
 

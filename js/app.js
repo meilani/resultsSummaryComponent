@@ -4,16 +4,15 @@ function getData () {
     fetch('../data.json')
     .then(response => response.json())
     .then(data => {
-
       createCategories(data)
     })
     .catch(error => {
-      console.error('Error fetching data:', error);
+      console.error('Error fetching data: ', error);
     });
 }
 
 function createCategories (data) {
-    console.log(data)
+
     let finalScore = 0
     let scoreSpan = document.querySelector('#final-score')
 

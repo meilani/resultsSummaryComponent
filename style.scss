@@ -1,10 +1,11 @@
 /** VARIABLES **/
 $red: hsl(0, 100%, 67%);
-$orange: hsl(39, 100%, 37%);
+$orange: hsl(40, 100%, 56%);
 $green: hsl(166, 100%, 37%);
 $lightBlue: hsl(241, 100%, 89%);
 $blue: hsl(234, 85%, 45%);
-$offwhite: hsl(221,100,96);
+$darkBlue: hsl(223, 30%, 27%);
+$offwhite: hsl(221,100%,96%);
 $white: hsl(0, 0%, 100%);
 
 $borderRadius: 32px;
@@ -48,6 +49,7 @@ h1 {
 
 ul {
     list-style-type: none;
+    margin-bottom: 2rem;
 }
 
 .container {
@@ -120,8 +122,30 @@ ul {
         li {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             margin-bottom: .89rem;
             width: 100%;
+        }
+
+        .category {
+            border-radius: 12px;
+            padding: .89rem;
+
+            .col-1 {
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: .67rem;
+            }
+
+            .col-2 {
+                font-weight: 700;
+                color: hsla(223, 30%, 27%, .5);
+
+                span {
+                    color: $darkBlue;
+                }
+            }
         }
 
         #cat-1 {
@@ -136,20 +160,63 @@ ul {
             background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
             
             .col-1 {
-                color: hsl(40,100%,56%);
+                color: $orange;
             }
         }
 
         #cat-3 {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
 
+            .col-1 {
+                color: $green;
+            }
         }
 
         #cat-4 {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
 
-        }
+            .col-1 {
+                color: $blue;
+            }
+        }   
 
         .col-1 {
             display: flex;
+        }
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 128px;
+        background-color: $darkBlue;
+        color: $white;
+        font-weight: 700;
+        padding: .89rem;
+        line-height: 1.21em;
+        position: relative;
+
+        &::before {
+            content: "Continue";
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 128px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+            opacity: 0;
+            transition: opacity .5s ease;
+        }
+
+        &:hover::before {
+            opacity: 1;
         }
     }
 }
